@@ -1,0 +1,5 @@
+- [X] Start webserver for monument-software.ch that uses cert and key, v1
+- [X] Test curl connection without root CA: `curl https://monument-software.ch`
+- [X] Test curl connection with root CA: `curl -I --cacert ms-v1.pem https://monument-software.ch`
+- [X] Generate a secondary root CA: `curl -I --cacert ms-v2.pem https://monument-software.ch`
+- [X] Go application should connect to HTTPS server, without throwing an HTTPS error, without requiring additional configuration.
